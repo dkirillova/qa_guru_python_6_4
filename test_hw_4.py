@@ -64,7 +64,7 @@ def test_unique_elements():
     l = [1, 2, 3, 4, 5, 5, 5, 6, 7, 8, 8, 9, 10, 10]
     new_l = set(l)
     l = list(new_l)
-    #l = list(set(l))
+
     # TODO удалите повторяющиеся элементы
 
     assert isinstance(l, list)
@@ -83,6 +83,8 @@ def test_dicts():
     second = [1, 2, 3, 4, 5]
     # TODO создайте словарь
     d = dict(zip(first, second))
+    print(d.values())
+
 
     assert isinstance(d, dict)
     assert len(d) == 5
